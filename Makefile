@@ -1,6 +1,6 @@
 ############################################################################
 # FILE  : Makefile
-# AUTHOR: (C) Copyright 2012 by Peter C. Chapin
+# AUTHOR: (C) Copyright 2023 by Peter Chapin
 #
 # This is the GNU Make makefile for the netstream library.
 ############################################################################
@@ -8,7 +8,7 @@
 CC      = gcc
 CXX     = g++
 AR      = ar
-OPTIONS = -Wall -c -g
+OPTIONS = -std=c++20 -Wall -c -g
 LIBS    = 
 
 # Implicit rules for converting source to object.
@@ -35,7 +35,7 @@ clean:
 ############################################################################
 # Module dependencies
 
-HEADERS = environ.h netstream.hpp connection.hpp
+HEADERS = environ.hpp netstream.hpp connection.hpp
 
 netstream.o:	netstream.cpp $(HEADERS)
 connection.o:	connection.cpp $(HEADERS)

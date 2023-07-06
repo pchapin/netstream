@@ -1,13 +1,13 @@
 /*!
  * \file connection.hpp
- * \author Peter C. Chapin
+ * \author Peter Chapin
  * \brief Interface to the connection classes.
  */
 
 #ifndef CONNECTION_HPP
 #define CONNECTION_HPP
 
-#include "environ.h"
+#include "environ.hpp"
 #include <string>
 
 #if eOPSYS == eWIN32
@@ -45,26 +45,26 @@ namespace netstream {
          * \param buffer The location of the data to be written.
          * \param count The number of bytes to write.
          * \return The number of bytes written. A value other than count implies that an error
-         * has occured.
+         * has occurred.
          */
         virtual int write(const char *buffer, int count) = 0;
 
         //! Return the connection's error status.
         /*!
          * \return True if the connection is operational; false if an error of some kind has
-         * occured.
+         * occurred.
          */
         virtual bool isOk( ) = 0;
 
         //! Get description of the latest failure.
         /*!
-         * \return A human readible string describing the reason for the last error condition.
+         * \return A human readable string describing the reason for the last error condition.
          */
         std::string get_failure( )
             { return( failure_reason ); }
 
     protected:
-        std::string failure_reason;  //!< Human readible reason for last failure.
+        std::string failure_reason;  //!< Human readable reason for last failure.
     };
 
 
@@ -142,19 +142,19 @@ namespace netstream {
         //! Return the server's error status.
         /*!
          * \return True if the server endpoint is operational; false if an error of some kind
-         * has occured.
+         * has occurred.
          */
         virtual bool isOk( ) = 0;
 
         //! Get description of the latest failure.
         /*!
-         * \return A human readible string describing the reason for the last error condition.
+         * \return A human readable string describing the reason for the last error condition.
          */
         std::string get_failure( )
             { return( failure_reason ); }
 
     protected:
-        std::string failure_reason;  //!< Human readible reason for last failure.
+        std::string failure_reason;  //!< Human readable reason for last failure.
      };
 
 

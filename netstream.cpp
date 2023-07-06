@@ -1,13 +1,13 @@
 /*!
  * \file netstream.cpp
- * \author Peter C. Chapin
+ * \author Peter Chapin
  * \brief Main implementation of the netstream library.
  */
 
 #include <iostream>
 #include <stdexcept>
 
-#include "environ.h"
+#include "environ.hpp"
 #include "netstream.hpp"
 
 #if eOPSYS == eWIN32

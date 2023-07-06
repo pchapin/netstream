@@ -1,13 +1,13 @@
 /*!
  * \file connect.cpp
- * \author Peter C. Chapin
+ * \author Peter Chapin
  * \brief Implementation of the connection classes.
  */
 
 #include <cstring>
 #include <stdexcept>
 
-#include "environ.h"
+#include "environ.hpp"
 #include "connection.hpp"
 
 using namespace std;

@@ -1,11 +1,11 @@
 /*!
  * \file netstream.hpp
- * \author Peter C. Chapin
+ * \author Peter Chapin
  * \brief Master header for the netstream library.
  *   
  * To simplify use of the netstream library this header is provided. It includes all other
  * netstream headers. Simply include netstream.hpp in your project to access any netstream
- * related component. Precompilation of this header is recommended.
+ * related component.
  *
  * This header provides classes that implement an I/O-stream interface to connection oriented
  * network services. Also several utility classes are also provided. Any type of connection

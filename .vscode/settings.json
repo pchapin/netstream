@@ -1,0 +1,9 @@
+{
+    "cmake.configureOnOpen": false,
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c99",
+    "editor.wordWrapColumn": 96,
+    "rewrap.wholeComment": false,
+    "rewrap.wrappingColumn": 96,
+    "rewrap.reformat": false
+}
